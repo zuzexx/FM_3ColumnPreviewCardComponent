@@ -2,30 +2,83 @@
 
 body{
     display: flex;
-    flex-direction: row;
     margin:0;
     align-items: center;
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+    color:white;
 }
-main{
-    flex-direction: row;
+.sedans button {
+    background-color: white;
+    color:hsl(31, 77%, 52%);
+    border-radius: 30px;
+    border-color: white;
+    margin: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding:13px 20px;
+    font-weight: 400;
 }
-
+.suvs button {
+    background-color: white;
+    color:hsl(184, 100%, 22%);
+    border-radius: 30px;
+    border-color: white;
+    margin: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding:13px 20px;
+    font-weight: 400;
+}
+.luxury button {
+    background-color: white;
+    color:hsl(179, 100%, 13%);
+    border-radius: 30px;
+    border-color: white;
+    margin: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding:13px 20px;
+    font-weight: 400;
+}
 h2{
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
 }
 .sedans{
     background-color: hsl(31, 77%, 52%);
-    width:25%
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .suvs{
     background-color: hsl(184, 100%, 22%) ;
-    width:25%
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
 }
 .luxury{
    background-color:  hsl(179, 100%, 13%);
-   width:25%
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 15px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
 }
+@media screen and (max-width: 500px) {
+    .sedans .suvs .luxury{
+        width:200px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    main{
+        margin-left: 50px;
+    }
+    .luxury{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+     }
+     .sedans{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+  }
