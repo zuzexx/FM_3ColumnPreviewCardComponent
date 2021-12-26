@@ -5,8 +5,6 @@ body{
     margin:0;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
     color:white;
 }
 
@@ -61,6 +59,8 @@ button:hover{
 h2{
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
 }
 .sedans{
     background-color: hsl(31, 77%, 52%);
@@ -111,14 +111,28 @@ h2{
     }
   }
   @media screen and (min-width: 500px) {
-    
+    div{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
     .luxury{
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px; 
      }
      .sedans{
         border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
-    
-  }
+    p{
+        width:250px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    img{
+        margin-left:30px;
+        margin-top: 30px;
+    }
+    h2{
+        margin-left: 30px;
+    }
+}
