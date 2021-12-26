@@ -1,8 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
 body{
     display: flex;
+    flex-direction: row;
     margin:0;
     align-items: center;
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+}
+main{
+    flex-direction: row;
+}
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    width:25%
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%) ;
+    width:25%
+}
+.luxury{
+   background-color:  hsl(179, 100%, 13%);
+   width:25%
 }
