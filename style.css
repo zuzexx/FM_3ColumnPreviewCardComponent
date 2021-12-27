@@ -7,7 +7,9 @@ body{
     justify-content: center;
     color:white;
 }
-
+button{
+    margin-left:40px;
+}
 .sedans button {
     background-color: white;
     color:hsl(31, 77%, 52%);
@@ -91,11 +93,17 @@ h2{
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border-top-right-radius: none;
+        grid-area: 3/1/4/2;
      }
      .sedans{
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         border-bottom-left-radius: none;
+        grid-area:1/1/2/2;
+    }
+
+    .suvs{
+        grid-area:2/1/3/2;;
     }
     p{
         width:250px;
@@ -111,28 +119,37 @@ h2{
     }
   }
   @media screen and (min-width: 500px) {
-    div{
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
     .luxury{
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px; 
+        grid-area:1/3/2/4;
+        height: 500px;
      }
      .sedans{
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        grid-area: 1/1/2/2;
+        height: 500px;
     }
+    .suvs{
+        grid-area:1/2/2/3;
+        height: 500px;
+   }
     p{
-        width:250px;
-        margin-left: 30px;
-        margin-right: 30px;
+        width:200px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 100px;
     }
     img{
         margin-left:30px;
         margin-top: 30px;
     }
     h2{
-        margin-left: 30px;
+        margin-left: 40px;
+    }
+    main{
+        display:grid;
+        margin-top:200px;
     }
 }
