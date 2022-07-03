@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+body {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+@media (min-width: 850px) {
+  main {
+    display: grid;
+    margin-top: 200px;
+  }
+}
+
+.suvs button {
+  margin-left: 40px;
+  background-color: white;
+  color: hsl(184deg, 100%, 22%);
+  border-radius: 30px;
+  border-color: white;
+  margin: 20px;
+  padding: 13px 20px;
+  font-weight: 400;
+  border-style: none;
+}
+.suvs button:hover {
+  background-color: hsl(184deg, 100%, 22%);
+  color: white;
+}
+
+.sedans button {
+  margin-left: 40px;
+  background-color: white;
+  color: hsl(31deg, 77%, 52%);
+  border-radius: 30px;
+  border-color: white;
+  margin: 20px;
+  padding: 13px 20px;
+  font-weight: 400;
+  border-style: none;
+}
+.sedans button:hover {
+  background-color: hsl(31deg, 77%, 52%);
+  color: white;
+}
+
+.luxury button {
+  margin-left: 40px;
+  background-color: white;
+  color: hsl(179deg, 100%, 13%);
+  border-radius: 30px;
+  border-color: white;
+  margin: 20px;
+  padding: 13px 20px;
+  font-weight: 400;
+  border-style: none;
+}
+.luxury button:hover {
+  background-color: hsl(179deg, 100%, 13%);
+  color: white;
+}
+
+.suvs {
+  background-color: hsl(184deg, 100%, 22%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+@media (min-width: 850px) {
+  .suvs {
+    grid-area: 1/2/2/3;
+    height: 500px;
+  }
+}
+
+.sedans {
+  background-color: hsl(31deg, 77%, 52%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+@media (min-width: 850px) {
+  .sedans {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    grid-area: 1/1/2/2;
+    height: 500px;
+  }
+}
+
+.luxury {
+  background-color: hsl(179deg, 100%, 13%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+@media (min-width: 850px) {
+  .luxury {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    grid-area: 1/3/2/4;
+    height: 500px;
+  }
+}
+
+p {
+  width: 250px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+@media (min-width: 850px) {
+  p {
+    width: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+  }
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+@media (min-width: 850px) {
+  h2 {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 850px) {
+  img {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=main.css.map */
