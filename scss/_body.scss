@@ -1,0 +1,26 @@
+@mixin desktop(){
+    @media(min-width:$desktop){
+        @content;
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $light-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+    overflow: scroll;
+    @include desktop(){
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+

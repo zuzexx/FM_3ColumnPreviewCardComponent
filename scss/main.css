@@ -1,1 +1,157 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  min-height: 100vh;
+  overflow: scroll;
+}
+@media (min-width: 800px) {
+  body {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+#containers {
+  height: 1326px;
+  width: 327px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: left;
+}
+@media (min-width: 800px) {
+  #containers {
+    width: 920px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+#containers img {
+  height: 40px;
+  width: 64px;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+#containers h1 {
+  color: hsl(0deg, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  margin-left: 3rem;
+  text-transform: uppercase;
+}
+#containers p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  margin-left: 3rem;
+  width: 231px;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+}
+@media (min-width: 800px) {
+  #containers p {
+    width: 212px;
+    line-height: 1.8rem;
+  }
+}
+#containers button {
+  margin-left: 3rem;
+  height: 48px;
+  width: 146px;
+  color: hsl(0deg, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  border-radius: 30px;
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+}
+@media (min-width: 800px) {
+  #containers button {
+    margin-top: 4rem;
+  }
+}
+
+#sedans {
+  background-color: hsl(31deg, 77%, 52%);
+  height: 442px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#sedans button {
+  color: hsl(31deg, 77%, 52%);
+}
+#sedans button:hover {
+  cursor: pointer;
+  background-color: hsl(31deg, 77%, 52%);
+  color: hsl(0deg, 0%, 95%);
+  border: 2px solid hsl(0deg, 0%, 95%);
+}
+@media (min-width: 800px) {
+  #sedans {
+    height: 500px;
+    width: 307px;
+  }
+}
+@media (min-width: 800px) {
+  #sedans {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+#suv {
+  background-color: hsl(184deg, 100%, 22%);
+  height: 442px;
+}
+#suv button {
+  color: hsl(184deg, 100%, 22%);
+}
+#suv button:hover {
+  cursor: pointer;
+  background-color: hsl(184deg, 100%, 22%);
+  color: hsl(0deg, 0%, 95%);
+  border: 2px solid hsl(0deg, 0%, 95%);
+}
+@media (min-width: 800px) {
+  #suv {
+    height: 500px;
+    width: 307px;
+  }
+}
+
+#luxury {
+  background-color: hsl(179deg, 100%, 13%);
+  height: 442px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#luxury button {
+  color: hsl(179deg, 100%, 13%);
+}
+#luxury button:hover {
+  cursor: pointer;
+  background-color: hsl(179deg, 100%, 13%);
+  color: hsl(0deg, 0%, 95%);
+  border: 2px solid hsl(0deg, 0%, 95%);
+}
+@media (min-width: 800px) {
+  #luxury {
+    height: 500px;
+    width: 307px;
+  }
+}
+@media (min-width: 800px) {
+  #luxury {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,108 @@
+
+@mixin containers($color){
+    background-color: $color;
+    height: 442px;
+    button{
+        color: $color;
+        &:hover{
+            cursor: pointer;
+            background-color: $color;
+            color: $light-gray;
+            border: 2px solid $light-gray;
+        }
+    }
+    @include desktop(){
+        height: 500px;
+        width: 307px;
+    }
+
+}
+
+@mixin desktop(){
+    @media(min-width:$desktop){
+        @content;
+    }
+}
+
+#containers{
+    height: 1326px;
+    width: 327px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: left;
+    @include desktop(){
+        width: 920px;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    img{
+        height: 40px;
+        width: 64px;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+    h1{
+        color:$light-gray;
+        font-family: $big;
+        margin-left: 3rem;
+        text-transform: uppercase;
+    }
+    p{
+        color: $transparent-white;
+        font-family: $lexend;
+        margin-left: 3rem;
+        width: 231px;
+        font-size: 0.95rem;
+        line-height: 1.5rem;
+        @include desktop(){
+             
+            width: 212px;
+            line-height: 1.8rem;
+            
+        }
+    }
+    button{
+        margin-left: 3rem;
+        height: 48px;
+        width: 146px;
+        color: $light-gray;
+        font-family: $lexend;
+        border: none;
+        border-radius: 30px;
+        margin-top: 1.5rem;
+        text-transform: capitalize;
+        @include desktop(){
+            margin-top: 4rem;
+        }
+    }
+
+}
+#sedans{
+    @include containers($bright-orange);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    @include desktop(){
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    
+}
+#suv{
+    @include containers($dark-cyan);
+
+}
+
+#luxury{
+    @include containers($very-dark-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    @include desktop(){
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+}
