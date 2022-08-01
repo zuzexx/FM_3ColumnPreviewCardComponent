@@ -32,6 +32,7 @@ body {
   height: 1326px;
   width: 327px;
   margin: auto;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
