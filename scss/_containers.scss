@@ -51,6 +51,9 @@
         font-family: $big;
         margin-left: 3rem;
         text-transform: uppercase;
+        @include desktop(){
+            font-size: 2.5rem;
+        }
     }
     p{
         color: $transparent-white;
