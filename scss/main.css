@@ -92,7 +92,7 @@ body {
 @media (min-width: 800px) {
   #containers button {
     margin-top: 4.3rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
