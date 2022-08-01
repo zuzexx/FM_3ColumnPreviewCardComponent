@@ -75,7 +75,7 @@ body {
 @media (min-width: 800px) {
   #containers p {
     width: 212px;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
   }
 }
 #containers button {
@@ -91,7 +91,7 @@ body {
 }
 @media (min-width: 800px) {
   #containers button {
-    margin-top: 3.5rem;
+    margin-top: 4rem;
   }
 }
 
