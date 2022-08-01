@@ -70,12 +70,12 @@ body {
   margin-left: 3rem;
   width: 231px;
   font-size: 0.95rem;
-  line-height: 0.9rem;
+  line-height: 1.5;
 }
 @media (min-width: 800px) {
   #containers p {
     width: 212px;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
   }
 }
 #containers button {

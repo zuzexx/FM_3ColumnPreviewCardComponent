@@ -62,11 +62,11 @@
         margin-left: 3rem;
         width: 231px;
         font-size: 0.95rem;
-        line-height: 0.9rem;
+        line-height: 1.5;
         @include desktop(){
              
             width: 212px;
-            line-height: 1.8rem;
+            line-height: 1.6rem;
             
         }
     }
