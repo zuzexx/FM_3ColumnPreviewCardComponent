@@ -70,7 +70,7 @@ body {
   margin-left: 3rem;
   width: 231px;
   font-size: 0.95rem;
-  line-height: 1.5rem;
+  line-height: 0.9rem;
 }
 @media (min-width: 800px) {
   #containers p {
