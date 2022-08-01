@@ -27,7 +27,7 @@
 #containers{
     height: 1326px;
     width: 327px;
-    
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +80,7 @@
         margin-top: 1.5rem;
         text-transform: capitalize;
         @include desktop(){
-            margin-top: 4rem;
+            margin-top: 3.5rem;
         }
     }
 

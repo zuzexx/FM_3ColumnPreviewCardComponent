@@ -20,9 +20,18 @@ body {
   }
 }
 
+@media (min-width: 800px) {
+  main {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
 #containers {
   height: 1326px;
   width: 327px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,7 +90,7 @@ body {
 }
 @media (min-width: 800px) {
   #containers button {
-    margin-top: 4rem;
+    margin-top: 3.5rem;
   }
 }
 
